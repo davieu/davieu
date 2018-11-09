@@ -1,3 +1,94 @@
 .radius-small {
     border-radius: 12px;
 }
+
+/* ----------------------------------------
+   -------- 10.HEADER AND NAVIGATION ------
+   ---------------------------------------- */
+/* .fixed-top {
+  z-index: 99;
+}
+poop {
+  background-color: transparent;
+  border-color: transparent;
+  padding: 36px 0;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+poop .navbar-collapse,
+poop .navbar-form {
+  margin-top: 6px;
+}
+poop.navbar-light .close-btn .navbar-right > li > a {
+  padding: 16px 18px;
+}
+poop.navbar-light .navbar-nav > li > a {
+  padding: 10px 18px;
+  color: #fff;
+}
+poop .navbar-nav > li > a {
+  color: #191919;
+  font-weight: 600;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  font-size: 14px;
+  padding: 10px 18px;
+}
+poop .navbar-nav > li > a:hover {
+  color: #FF9A00!important;
+  background-color: transparent;
+}
+poop .navbar-nav > li.active > a,
+poop .navbar-nav > li.active > a:focus,
+poop .navbar-nav > li.active > a:hover {
+  color: #FF9A00!important;
+  background-color: transparent;
+}
+.top-nav-collapse {
+  background-color: #fff;
+  padding: 18px 0;
+  -webkit-box-shadow: 0 0 6px #b8b8b9;
+  -moz-box-shadow: 0 0 6px #b8b8b9;
+  box-shadow: 0 0 6px #b8b8b9;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+.top-nav-collapse .navbar-nav > li > a,
+.top-nav-collapse.navbar-light .navbar-nav > li > a,
+poop.nav-portfolio-detail .navbar-nav > li > a {
+  color: #191919;
+}
+poop.navbar-light .logo_light {
+  display: block;
+}
+poop.navbar-light .logo_dark {
+  display: none;
+}
+.top-nav-collapse.navbar-light .logo_dark {
+  display: block;
+}
+.top-nav-collapse.navbar-light .logo_light {
+  display: none;
+}
+poop .navbar-toggle {
+  border: none;
+}
+poop.nav-portfolio-detail .navbar-brand .logo_light {
+  display: none;
+}
+poop.nav-portfolio-detail .navbar-brand .logo_dark {
+  display: block;
+}
+poop .navbar-toggle:focus,
+poop .navbar-toggle:hover {
+  background-color: transparent;
+}
+poop .navbar-toggle .icon-bar {
+  background-color: #fff;
+}
+.top-nav-collapse .navbar-toggle .icon-bar {
+  background-color: #191919;
+} */
