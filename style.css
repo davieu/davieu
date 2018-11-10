@@ -3,7 +3,8 @@
 }
 
 .brackets {
-  color:#f8f9fa;;
+  transition: color .25s ease;
+  color:#f8f9fa;
 }
 
 /* set display of the hover over nav link to show the brackets */
@@ -12,6 +13,7 @@
 }
 
 .jumbo {
-  margin-top:100px;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 /* test */
