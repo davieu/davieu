@@ -1,5 +1,5 @@
 .radius-small {
-    border-radius: 12px;
+  border-radius: 12px;
 }
 
 .brackets {
@@ -9,8 +9,9 @@
 /* set display of the hover over nav link to show the brackets */
 #demo:hover > .brackets { 
   color: gold;
- }
+}
 
- .jumbo {
-   margin-top:100px;
- }
+.jumbo {
+  margin-top:100px;
+}
+/* test */
