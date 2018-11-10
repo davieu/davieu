@@ -1,3 +1,7 @@
+:root {
+  --site-main-color: gold;
+}
+
 .radius-small {
   border-radius: 12px;
 }
@@ -9,7 +13,7 @@
 
 /* set display of the hover over nav link to show the brackets */
 #demo:hover > .brackets { 
-  color: gold;
+  color: var(--site-main-color);
 }
 
 .jumbo {
@@ -59,10 +63,10 @@
 }
 
 .fill {
-  background-color: gold;
+  background-color: var(--site-main-color);
   color: white;
   transition: 0.35s;
-  border-color: gold;
+  border-color: var(--site-main-color);
   border-width: 2px;
 }
 
@@ -72,9 +76,9 @@
 
 .fill:hover, .fill:focus {
   border-width: 2px;
-  border-color: gold;
+  border-color: var(--site-main-color);
   background-color: white;
-  color: gold; 
+  color: var(--site-main-color); 
 }
 
 
