@@ -1,18 +1,22 @@
-var yo1 = document.querySelector(".changeit").addEventListener("mouseover", mouseOver);
-var yo2 = document.querySelector(".changeit").addEventListener("mouseout", mouseOut);
+let domStrings = {
+    navbarBrandDOM: ".navbar-brand",
+    bracketForNameDOM: "bracket-for-name"
+}
+
+document.querySelector(domStrings.navbarBrandDOM).addEventListener("mouseover", mouseOver);
+
+document.querySelector(domStrings.navbarBrandDOM).addEventListener("mouseout", mouseOut);
 
 function mouseOver() {
-    var x = document.getElementsByClassName("normal");
-    var yo = x.length
-    for (let i = 0; i < yo; i++) {
-        x[i].style.color = "gold";
+    let brackets = document.getElementsByClassName(domStrings.bracketForNameDOM);
+    for (let i = 0; i < brackets.length; i++) {
+        brackets[i].style.color = "gold";
     }
 }
 
 function mouseOut() {
-    var x = document.getElementsByClassName("normal");
-    var yo = x.length
-    for (let i = 0; i < yo; i++) {
-        x[i].style.color = "black";
+    let brackets = document.getElementsByClassName(domStrings.bracketForNameDOM);
+    for (let i = 0; i < brackets.length; i++) {
+        brackets[i].style.color = "black";
     }
 }
