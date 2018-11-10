@@ -3,13 +3,12 @@
 }
 
 .brackets {
-  color: orange;
-  display: none;
+  color:#f8f9fa;;
 }
 
 /* set display of the hover over nav link to show the brackets */
 #demo:hover > .brackets { 
-  display: inline;
+  color: gold;
  }
 
  .jumbo {
