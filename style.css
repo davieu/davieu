@@ -8,7 +8,7 @@
 
 .brackets {
   transition: color .3s ease;
-  color:#f8f9fa;
+  color:white;
 }
 
 /* set display of the hover over nav link to show the brackets */
@@ -90,8 +90,8 @@
 
 
 /* BEGIN card shadow and hover raise */
-.raise:hover,
-.raise:focus {
+.card:hover,
+.card:focus {
   /* box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
   -webkit-transform: translateY(-0.25em);
           transform: translateY(-0.25em); */
@@ -101,16 +101,16 @@
   box-shadow: 0 12px 40px 0 rgba(0, 0, 0, 0.2);
 }
 
-.raise {
+.card {
   /* border-radius: 12px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: 0.25s; */
   box-shadow: 0 6px 28px -4px rgba(0, 0, 0, 0.2);
   border-radius: 20px;
-  background-color: #fff;
-  padding: 24px 10px;
+  /* background-color: #fff; */
+  /* padding: 24px 10px;
   margin-left: 20px;
-  margin-right: 20px;
+  margin-right: 20px; */
   transition: box-shadow .25s, transform .25s;
 }
 /* END card shadow and hover raise */
