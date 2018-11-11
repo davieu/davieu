@@ -50,19 +50,44 @@
   color: var(--site-main-color);
 }
 
-.circle {
-  display: inline-block
-}
-.illustration {
-  width: 180px;
-  margin-left: -20px;
+
+/* ----------------------------------------
+   PROFILE HEAD
+   ---------------------------------------- */
+   
+.profile-head {
+  
 }
 
-.illustration-header {
+.profile-head__circle {
+  vertical-align: top;
+  height: 180px;
+  margin-left: -20px;
   display: inline-block;
-  padding-left: 20px;
-  font-size: 80px
 }
+
+.profile-head__title {
+  display: inline-block;
+  margin: 20px 0 0 20px;
+  font-size: 80px;
+  line-height: 70px;
+}
+
+@media only screen and (max-width: 576px) {
+  .profile-head__circle {
+    margin-left: -10px;
+    height: 130px;
+  }
+  
+  .profile-head__title {
+    margin-left: 0;
+    font-size: 50px;
+    line-height: 45px;
+    margin-left: 10px;
+  }
+}
+
+
 
 /* BEGIN card shadow and hover raise */
 .raise:hover,
