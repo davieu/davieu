@@ -1,16 +1,18 @@
+
 :root {
   --site-main-color: #f4c016;
   --border-radius-main: 12px;
+  --icon-color: #212529;
+}
+
+.dev-pic {
+  height:350px;
+  width:250px;
 }
 
 .jumbo {
   padding-bottom: 100px;
   padding-top: 150px;
-}
-
-.dev-pic {
-  margin-top: 50px;
-  margin-bottom: 75px;
 }
 
 .info-divider {
@@ -19,6 +21,11 @@
 }
 
 .my-work {
+  margin-top: 75px;
+  margin-bottom: 25px;
+}
+
+.about-me {
   margin-top: 75px;
   margin-bottom: 25px;
 }
@@ -50,6 +57,16 @@
   transition: color .3s ease;
   color:white;
 }
+
+.envelope {
+  color: var(--site-main-color);
+  padding-left: 6px;
+}
+
+
+/* .nav-link:hover > .envelope{
+  color: var(--site-main-color);
+} */
 
 /* set display of the hover over nav link to show the brackets */
 .nav-link:hover > .brackets { 
@@ -106,7 +123,6 @@
  /* github icon */
 .github-link {
   float: right;
-  color: #212529;
 }
 
 .github-link:hover {
@@ -121,9 +137,9 @@
 /* BEGIN card shadow and hover raise */
 .card:hover,
 .card:focus {
-  -ms-transform: translate(0, -2px); /* IE 9 */
-  -webkit-transform: translate(-0, -2px); /* Safari */
-  transform: translate(0, -2px);
+  -ms-transform: translate(0, -3px); /* IE 9 */
+  -webkit-transform: translate(-0, -3px); /* Safari */
+  transform: translate(0, -3px);
   /* box-shadow: 0 12px 40px 0 rgba(0, 0, 0, 0.2); */
   box-shadow: 0 10px 20px 0px rgba(0, 0, 0, 0.2);
 }
@@ -139,31 +155,31 @@
 
 /* BEGIN card button hover */
 /* when the button of the card is hovered it will fill in */
-.fill:hover,
-.fill:focus {
-  box-shadow: inset 0 0 0 15px white;
-}
-
-.fill {
+.btn-fill {
   background-color: var(--site-main-color);
   color: white;
   transition: 0.35s;
   border-color: var(--site-main-color);
   border-width: 2px;
+  transition: 0.35s;
 }
 
-.fill {
-  transition: 0.5s;
-}
-
-.fill:hover, .fill:focus {
+.btn-fill:hover, .btn-fill:focus {
+  box-shadow: inset 0 0 0 15px white;
   border-width: 2px;
   border-color: var(--site-main-color);
   background-color: white;
   color: var(--site-main-color); 
 }
 
+/* icon fill */
+.btn-icon-fill {
+  color: var(--icon-color);
+  transition: 0.35s;
+}
+
+.btn-icon-fill:hover, .btn-icon-fill:focus {
+  background-color: white;
+  color: var(--site-main-color); 
+}
 /* END card button hover */
-
-
-
