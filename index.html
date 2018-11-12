@@ -14,7 +14,7 @@
    NAVBAR
 ------------------------------------------>
 
-  <div class="container"> 
+  <div class="container" id="home-section"> 
     <nav class="navbar navbar-expand-md navbar-light fixed-top">
       <a class="navbar-brand" href="https://davieu.github.io/"><strong><span class="bracket-navbar-brand">{</span> Davis Umana <span class="bracket-navbar-brand">}</span></strong></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,16 +24,19 @@
       <div class="collapse navbar-collapse nav-array justify-content-end" id="navbarText">
         <ul class="navbar-nav navbar-right">
           <li class="nav-item mr-2">
-            <a id="demo" class="nav-link" href="https://davieu.github.io/"><span class="brackets">{ </span>Home<span class="brackets"> }</span></a>
+            <a class="nav-link" href="#home-section"><span class="brackets">{ </span>Home<span class="brackets"> }</span></a>
           </li>
           <li class="nav-item mr-2">
-            <a id="demo" class="nav-link" href="#"><span class="brackets">{ </span>About Me<span class="brackets"> }</span></a>
+            <a class="nav-link" href="#"><span class="brackets">{ </span>About Me<span class="brackets"> }</span></a>
           </li>
           <li class="nav-item mr-2">
-            <a id="demo" class="nav-link" href="#"><span class="brackets">{ </span>My Work<span class="brackets"> }</span></a>
+            <a class="nav-link" href="index.html#my-work-section"><span class="brackets">{ </span>My Work<span class="brackets"> }</span></a>
+          </li>
+          <li class="nav-item mr-2">
+            <a class="nav-link" href="https://www.linkedin.com/in/davisumana/"><span class="brackets">{ </span>LinkdIn<span class="brackets"> }</span></a>
           </li>
           <li class="nav-item mr-4">
-            <a id="demo" class="nav-link" href="#"><span class="brackets">{ </span>Get in Touch<span class="brackets"> }</span></a>
+            <a class="nav-link" href="#"><span class="brackets">{ </span>Get in Touch<span class="brackets"> }</span></a>
           </li>
         </ul>
       </div>
@@ -97,8 +100,8 @@ https://dice-game-du.herokuapp.com/ -->
 <!-----------------------------------------
    MY WORK CARDS
 ------------------------------------------>
-
-    <div class="row  my-work">
+    <div  id="my-work-section"></div>
+    <div class="row my-work">
       <div class="col-sm-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2">
         <h2><i class="fas fa-code font-icon"></i> My Work</h2>
       </div>
@@ -106,15 +109,15 @@ https://dice-game-du.herokuapp.com/ -->
     
     <div class="row">
       <div class="col-sm-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2">
-        <div class="row">
+        <div class="row clearfix">
           <div class="col-md-6 col-sm-12 mt-4">
             <div class="card">
               <img class="card-img-top" src="img/placeholder.png" alt="Card image cap">
               <div class="card-body">
                 <h5 class="card-title ">HQ-Umana-Trivia</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text">Inspired by HQ-Trivia. Fullstack application that uses react and socket.io. Created as final project for Project Shift Cohort. </p>
                 <a href="project-pages/hq-umana.html" class="btn btn-sm fill"><strong>Check it Out!</strong></a>
-                <i class="fab fa-github fa-3x"></i>
+                <a class="github-link" href="#"><i class="fab fa-github fa-2x"></i></a>
               </div>
             </div>
           </div>
@@ -124,9 +127,9 @@ https://dice-game-du.herokuapp.com/ -->
               <img class="card-img-top" src="img/placeholder.png" alt="Card image cap">
               <div class="card-body">
                 <h5 class="card-title">Referral-System</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text">Collaborative fullstack project created for non-profits to use for referring clients to other organizations.</p>
                 <a href="project-pages/referral-system.html" class="btn btn-sm fill"><strong>Check it Out!</strong></a>
-                <i class="fab fa-github fa-3x"></i>
+                <a class="github-link" href="#"><i class="fab fa-github fa-2x"></i></a>
               </div>
             </div> 
           </div>
@@ -136,9 +139,10 @@ https://dice-game-du.herokuapp.com/ -->
               <img class="card-img-top" src="img/placeholder.png" alt="Card image cap">
               <div class="card-body">
                 <h5 class="card-title">Budget Buddy</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text">Frontend budget calculator that relied heavily on object oriented programming and separation of data and UI.</p>
                 <a href="project-pages/budget-buddy.html" class="btn btn-sm fill"><strong>Check it Out!</strong></a>
-                <i class="fab fa-github fa-3x"></i>
+                <a class="github-link" href="https://github.com/davieu/budget-buddy"><i class="fab fa-github fa-2x"></i></a>
+                <a class="github-link" href="https://davieu.github.io/budget-buddy"><i class="fab fa-github fa-2x"></i></a>
               </div>
             </div>
           </div>
@@ -148,9 +152,9 @@ https://dice-game-du.herokuapp.com/ -->
               <img class="card-img-top" src="img/placeholder.png" alt="Card image cap">
               <div class="card-body">
                 <h5 class="card-title">Dice Game</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text">Formally known as Pig. A simple web-app implementing game logic and buttons that interact with data.</p>
                 <a href="project-pages/dice-game.html" class="btn btn-sm fill"><strong>Check it Out!</strong></a>
-                <i class="fab fa-github fa-3x"></i>
+                <a class="github-link" href="https://github.com/davieu/Dice-Game"><i class="fab fa-github fa-2x"></i></a>
               </div>
             </div>
           </div>

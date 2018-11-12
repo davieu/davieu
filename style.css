@@ -3,29 +3,10 @@
   --border-radius-main: 12px;
 }
 
-.fab {
-  float: right;
-}
-
-.brackets {
-  transition: color .3s ease;
-  color:white;
-}
-
-/* set display of the hover over nav link to show the brackets */
-#demo:hover > .brackets { 
-  color: var(--site-main-color);
-}
-
-#demo:focus > .brackets { 
-  color: var(--site-main-color);
-}
-
 .jumbo {
-  margin-top: 150px;
-  margin-bottom: 100px;
+  padding-bottom: 100px;
+  padding-top: 150px;
 }
-/* test */
 
 .dev-pic {
   margin-top: 50px;
@@ -42,19 +23,14 @@
   margin-bottom: 25px;
 }
 
-.border-division {
-  border-bottom:5px solid var(--site-main-color);
-}
-
-.navbar {
-  background-color:white; 
-  border-top:var(--site-main-color) solid 4px;
-}
-
 .font-icon {
   color: var(--site-main-color);
 }
 
+
+/* ----------------------------------------
+  NAVBAR
+ ---------------------------------------- */
 .navbar-toggler{
   outline-color: white;
   border-color: white;
@@ -65,10 +41,31 @@
   border-color: var(--site-main-color);
 }
 
+.navbar {
+  background-color:white; 
+  border-top:var(--site-main-color) solid 4px;
+}
+
+.brackets {
+  transition: color .3s ease;
+  color:white;
+}
+
+/* set display of the hover over nav link to show the brackets */
+.nav-link:hover > .brackets { 
+  color: var(--site-main-color);
+}
+
+/* links for the navbar so that when one is clicked it is focused with brackets */
+.nav-link:focus > .brackets { 
+  color: var(--site-main-color);
+}
+
+
+
 /* ----------------------------------------
    PROFILE HEAD
    ---------------------------------------- */
-   
 .profile-head {
   
 }
@@ -102,6 +99,21 @@
 }
 
 
+/* ----------------------------------------
+  CARDS
+ ---------------------------------------- */
+
+ /* github icon */
+.github-link {
+  float: right;
+  color: #212529;
+}
+
+.github-link:hover {
+  color: #212529;
+  color: var(--site-main-color);
+}
+
 .card-img-top {
   border-radius: var(--border-radius-main) var(--border-radius-main) 0 0;
 }
@@ -109,14 +121,16 @@
 /* BEGIN card shadow and hover raise */
 .card:hover,
 .card:focus {
-  -ms-transform: translate(0, -5px); /* IE 9 */
-  -webkit-transform: translate(-0, -5px); /* Safari */
-  transform: translate(0, -5px);
-  box-shadow: 0 12px 40px 0 rgba(0, 0, 0, 0.2);
+  -ms-transform: translate(0, -2px); /* IE 9 */
+  -webkit-transform: translate(-0, -2px); /* Safari */
+  transform: translate(0, -2px);
+  /* box-shadow: 0 12px 40px 0 rgba(0, 0, 0, 0.2); */
+  box-shadow: 0 10px 20px 0px rgba(0, 0, 0, 0.2);
 }
 
 .card {
-  box-shadow: 0 6px 28px -4px rgba(0, 0, 0, 0.2);
+  /* box-shadow: 0 6px 28px -4px rgba(0, 0, 0, 0.2); */
+  box-shadow: 0 4px 15px -1px rgba(0, 0, 0, 0.2);
   border-radius: 14px;
   transition: box-shadow .25s, transform .25s;
 }
@@ -124,6 +138,7 @@
 
 
 /* BEGIN card button hover */
+/* when the button of the card is hovered it will fill in */
 .fill:hover,
 .fill:focus {
   box-shadow: inset 0 0 0 15px white;
@@ -147,7 +162,6 @@
   background-color: white;
   color: var(--site-main-color); 
 }
-
 
 /* END card button hover */
 
