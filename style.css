@@ -1,9 +1,10 @@
 :root {
   --site-main-color: #f4c016;
+  --border-radius-main: 12px;
 }
 
-.radius-small {
-  border-radius: 12px;
+.fab {
+  float: right;
 }
 
 .brackets {
@@ -13,6 +14,10 @@
 
 /* set display of the hover over nav link to show the brackets */
 #demo:hover > .brackets { 
+  color: var(--site-main-color);
+}
+
+#demo:focus > .brackets { 
   color: var(--site-main-color);
 }
 
@@ -50,6 +55,15 @@
   color: var(--site-main-color);
 }
 
+.navbar-toggler{
+  outline-color: white;
+  border-color: white;
+}
+
+.navbar-toggler:focus {
+  outline-color: white;
+  border-color: var(--site-main-color);
+}
 
 /* ----------------------------------------
    PROFILE HEAD
@@ -88,13 +102,13 @@
 }
 
 
+.card-img-top {
+  border-radius: var(--border-radius-main) var(--border-radius-main) 0 0;
+}
 
 /* BEGIN card shadow and hover raise */
 .card:hover,
 .card:focus {
-  /* box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
-  -webkit-transform: translateY(-0.25em);
-          transform: translateY(-0.25em); */
   -ms-transform: translate(0, -5px); /* IE 9 */
   -webkit-transform: translate(-0, -5px); /* Safari */
   transform: translate(0, -5px);
@@ -102,15 +116,8 @@
 }
 
 .card {
-  /* border-radius: 12px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  transition: 0.25s; */
   box-shadow: 0 6px 28px -4px rgba(0, 0, 0, 0.2);
-  border-radius: 20px;
-  /* background-color: #fff; */
-  /* padding: 24px 10px;
-  margin-left: 20px;
-  margin-right: 20px; */
+  border-radius: 14px;
   transition: box-shadow .25s, transform .25s;
 }
 /* END card shadow and hover raise */
