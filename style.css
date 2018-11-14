@@ -5,6 +5,16 @@
   --icon-color: #212529;
 }
 
+.margin-fix {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+.test {
+  margin-right: 0;
+  /* margin-left: 0; */
+}
+
 .skills-separator {
   font-weight: 400;
   color: var(--site-main-color);
