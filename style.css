@@ -5,6 +5,21 @@
   --icon-color: #212529;
 }
 
+.skills-separator {
+  font-weight: 400;
+  color: var(--site-main-color);
+}
+
+/* .test {
+  display:inline;
+  float: right;
+} */
+
+.inline-style {
+  display: inline-block;
+}
+
+
 .footer {
   height: 150px;
   border-top: 6px solid var(--site-main-color);
@@ -34,6 +49,16 @@
 .about-me {
   margin-top: 100px;
   margin-bottom: 25px;
+}
+
+/* set display of the hover over nav link to show the brackets */
+.prev-next:hover > .brackets { 
+  color: var(--site-main-color);
+}
+
+/* links for the navbar so that when one is clicked it is focused with brackets */
+.prev-next:focus > .brackets { 
+  color: var(--site-main-color);
 }
 
 .font-icon {
@@ -161,7 +186,8 @@
 
 /* BEGIN card button hover */
 /* when the button of the card is hovered it will fill in */
-.btn-fill {
+/* this is the opposite fill */
+/* .btn-fill {
   background-color: var(--site-main-color);
   color: white;
   transition: 0.35s;
@@ -176,6 +202,23 @@
   border-color: var(--site-main-color);
   background-color: white;
   color: var(--site-main-color); 
+} */
+
+.btn-fill {
+  background-color: white;
+  color: var(--site-main-color);
+  transition: 0.35s;
+  border-color: var(--site-main-color);
+  border-width: 2px;
+  transition: 0.35s;
+}
+
+.btn-fill:hover, .btn-fill:focus {
+  box-shadow: inset 0 0 0 15px var(--site-main-color);
+  border-width: 2px;
+  border-color: var(--site-main-color);
+  background-color: var(--site-main-color);
+  color: white; 
 }
 
 /* icon fill */
