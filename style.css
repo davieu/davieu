@@ -15,11 +15,6 @@
   color: var(--site-main-color);
 }
 
-/* .test {
-  display:inline;
-  float: right;
-} */
-
 .inline-block-style {
   display: inline-block;
 }
@@ -75,6 +70,7 @@
 
 }
 
+/* this is an added class and is used in script.js for scrolling */
 .navbar-shadow {
   box-shadow: 0 2px 15px -2px rgba(0, 0, 0, 0.2);
 }
@@ -88,11 +84,6 @@
   color: var(--site-main-color);
   padding-left: 6px;
 }
-
-
-/* .nav-link:hover > .envelope{
-  color: var(--site-main-color);
-} */
 
 /* set display of the hover over nav link to show the brackets */
 .nav-link:hover > .brackets { 
