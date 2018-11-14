@@ -5,14 +5,9 @@
   --icon-color: #212529;
 }
 
-.margin-fix {
+.margin-fix-github-btn {
   margin-top: 4px;
   margin-bottom: 4px;
-}
-
-.test {
-  margin-right: 0;
-  /* margin-left: 0; */
 }
 
 .skills-separator {
@@ -25,15 +20,8 @@
   float: right;
 } */
 
-.inline-style {
+.inline-block-style {
   display: inline-block;
-}
-
-
-.footer {
-  height: 150px;
-  border-top: 6px solid var(--site-main-color);
-  background: rgba(2, 2, 2, 0.849);
 }
 
 .dev-pic {
@@ -61,16 +49,7 @@
   margin-bottom: 25px;
 }
 
-/* set display of the hover over nav link to show the brackets */
-.prev-next:hover > .brackets { 
-  color: var(--site-main-color);
-}
-
-/* links for the navbar so that when one is clicked it is focused with brackets */
-.prev-next:focus > .brackets { 
-  color: var(--site-main-color);
-}
-
+/* sets color for most icons */
 .font-icon {
   color: var(--site-main-color);
 }
@@ -92,6 +71,12 @@
 .navbar {
   background-color:white; 
   border-top: var(--site-main-color) solid 4px;
+  transition: box-shadow .40s;
+
+}
+
+.navbar-shadow {
+  box-shadow: 0 2px 15px -2px rgba(0, 0, 0, 0.2);
 }
 
 .brackets {
@@ -167,7 +152,7 @@
 }
 
 .github-link:hover {
-  color: #212529;
+  color: var(--icon-color);
   color: var(--site-main-color);
 }
 
@@ -182,7 +167,7 @@
   -webkit-transform: translate(-0, -3px); /* Safari */
   transform: translate(0, -3px);
   /* box-shadow: 0 12px 40px 0 rgba(0, 0, 0, 0.2); */
-  box-shadow: 0 10px 20px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 20px -1px rgba(0, 0, 0, 0.2);
 }
 
 .card {
@@ -193,26 +178,6 @@
 }
 /* END card shadow and hover raise */
 
-
-/* BEGIN card button hover */
-/* when the button of the card is hovered it will fill in */
-/* this is the opposite fill */
-/* .btn-fill {
-  background-color: var(--site-main-color);
-  color: white;
-  transition: 0.35s;
-  border-color: var(--site-main-color);
-  border-width: 2px;
-  transition: 0.35s;
-}
-
-.btn-fill:hover, .btn-fill:focus {
-  box-shadow: inset 0 0 0 15px white;
-  border-width: 2px;
-  border-color: var(--site-main-color);
-  background-color: white;
-  color: var(--site-main-color); 
-} */
 
 .btn-fill {
   background-color: white;
@@ -242,3 +207,31 @@
   color: var(--site-main-color); 
 }
 /* END card button hover */
+
+
+/* ------------------------------
+BEGIN FOOTER
+-------------------------------- */
+.btn-fill-footer {
+  background-color: var(--icon-color);
+  color: var(--site-main-color);
+  transition: 0.35s;
+  border-color: var(--site-main-color);
+  border-width: 2px;
+  transition: 0.35s;
+}
+
+.btn-fill-footer:hover, .btn-fill-footer:focus {
+  box-shadow: inset 0 0 0 15px var(--site-main-color);
+  border-width: 2px;
+  border-color: var(--site-main-color);
+  background-color: var(--site-main-color);
+  color: var(--icon-color); 
+}
+
+
+.footer {
+  height: 150px;
+  border-top: 6px solid var(--site-main-color);
+  background: var(--icon-color);
+}
