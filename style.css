@@ -5,43 +5,22 @@
   --icon-color: #212529;
 }
 
-.margin-fix-github-btn {
-  margin-top: 4px;
-  margin-bottom: 4px;
-}
 
-.skills-separator {
-  font-weight: 400;
-  color: var(--site-main-color);
-}
+
+/* ----------------------------------------
+  UTILITY
+ ---------------------------------------- */
 
 .inline-block-style {
   display: inline-block;
 }
 
-.dev-pic {
-  height:350px;
-  width:250px;
-}
-
-.jumbo {
-  padding-bottom: 100px;
+.pad-top-lg {
   padding-top: 150px;
 }
 
-.info-divider {
-  margin-top: 15px;
-  margin-bottom: 0;
-}
-
-.my-work {
-  margin-top: 75px;
-  margin-bottom: 25px;
-}
-
-.about-me {
-  margin-top: 100px;
-  margin-bottom: 25px;
+.pad-top-md {
+  padding-top: 100px;
 }
 
 /* sets color for most icons */
@@ -98,33 +77,35 @@
 
 
 /* ----------------------------------------
-   PROFILE HEAD
+   INTRODUCTION
    ---------------------------------------- */
-.profile-head {
-  
-}
 
-.profile-head__circle {
+.intro__profile-img {
   vertical-align: top;
   height: 180px;
   margin-left: -20px;
   display: inline-block;
 }
 
-.profile-head__title {
+.intro__name {
   display: inline-block;
   margin: 20px 0 0 20px;
   font-size: 80px;
   line-height: 70px;
 }
 
+.intro__separator {
+  font-weight: 400;
+  color: var(--site-main-color);
+}
+
 @media only screen and (max-width: 576px) {
-  .profile-head__circle {
+  .intro__profile-img {
     margin-left: -10px;
     height: 130px;
   }
   
-  .profile-head__title {
+  .intro__name {
     margin-left: 0;
     font-size: 50px;
     line-height: 45px;
@@ -134,7 +115,7 @@
 
 
 /* ----------------------------------------
-  CARDS
+  MY WORK
  ---------------------------------------- */
 
  /* github icon */
@@ -151,24 +132,25 @@
   border-radius: var(--border-radius-main) var(--border-radius-main) 0 0;
 }
 
-/* BEGIN card shadow and hover raise */
+.card {
+  box-shadow: 0 4px 10px -1px rgba(0, 0, 0, 0.2);
+  border-radius: 14px;
+  border: none;
+  transition: box-shadow .25s, transform .25s;
+}
+
 .card:hover,
 .card:focus {
   -ms-transform: translate(0, -3px); /* IE 9 */
   -webkit-transform: translate(-0, -3px); /* Safari */
   transform: translate(0, -3px);
-  /* box-shadow: 0 12px 40px 0 rgba(0, 0, 0, 0.2); */
-  box-shadow: 0 10px 20px -1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 20px -1px rgba(0, 0, 0, 0.2);
 }
 
-.card {
-  /* box-shadow: 0 6px 28px -4px rgba(0, 0, 0, 0.2); */
-  box-shadow: 0 4px 15px -1px rgba(0, 0, 0, 0.2);
-  border-radius: 14px;
-  transition: box-shadow .25s, transform .25s;
-}
-/* END card shadow and hover raise */
 
+/* ----------------------------------------
+  BUTTONS
+ ---------------------------------------- */
 
 .btn-fill {
   background-color: white;
@@ -187,7 +169,6 @@
   color: white; 
 }
 
-/* icon fill */
 .btn-icon-fill {
   color: var(--icon-color);
   transition: 0.35s;
@@ -197,11 +178,10 @@
   background-color: white;
   color: var(--site-main-color); 
 }
-/* END card button hover */
 
 
 /* ------------------------------
-BEGIN FOOTER
+  FOOTER
 -------------------------------- */
 .btn-fill-footer {
   background-color: var(--icon-color);
@@ -220,29 +200,7 @@ BEGIN FOOTER
   color: var(--icon-color); 
 }
 
-
-.footer {
-  height: 150px;
-  border-top: 6px solid var(--site-main-color);
-  background: var(--icon-color);
+footer {
+  background: #f4f4f4;
+  padding: 30px 0 60px 0;
 }
-
-
-#myBtn {
-  display: none;
-  position: fixed;
-  bottom: 20px;
-  right: 30px;
-  z-index: 99;
-  font-size: 18px;
-  border: none;
-  outline: none;
-  background-color: red;
-  color: white;
-  cursor: pointer;
-  padding: 15px;
-  border-radius: 4px;
-}
-
-#myBtn:hover {
-  background-color: #555;

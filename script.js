@@ -47,12 +47,12 @@ function doSomething(scroll_pos) {
       }
   }
   
-  window.addEventListener('scroll', function(e) {
-  
+window.addEventListener('scroll', function(e) {
+
     last_known_scroll_position = window.scrollY;
     //scrolling magic to lessen the pressure calls of the scroll event
     if (!ticking) {
-  
+    
       window.requestAnimationFrame(function() {
         doSomething(last_known_scroll_position);
         ticking = false;
@@ -61,27 +61,39 @@ function doSomething(scroll_pos) {
       ticking = true;
     }
 
-  });
+});
 
-window.onscroll = function() {scrollFunction()};
 
-function scrollFunction() {
-    if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
-        document.getElementById("myBtn").style.display = "block";
-    } else {
-        document.getElementById("myBtn").style.display = "none";
-    }
-}
+/****************************************************************************************
+ * function for scrolling up the page
+ ****************************************************************************************/
+ 
+// window.onscroll = function() {scrollFunction()};
+// window.addEventListener('scroll', scrollFunction)
 
-function topFunction(currentCount) {
-    setInterval(function() {
-         if (window.scrollY > 30 && btnclicked === true) {
-            document.body.scrollTop -= 50;
-            document.documentElement.scrollTop -= 50;
-         } else if (window.scrollY < 30 && btnclicked === true) {
-            btnclicked =false
-         }
-    },75); 
-    btnclicked = true
-}
+// function scrollFunction() {
+    
+//     if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+//         document.getElementById("myBtn").style.display = "block";
+        
+//     } else {
+//         document.getElementById("myBtn").style.display = "none";
+//     }
+// }
+
+// function topFunction(currentCount) {
+    
+//     setInterval(function() {
+        
+//          if (window.scrollY > 30 && btnclicked === true) {
+//             document.body.scrollTop = 0;
+//             document.documentElement.scrollTop -= 20;
+//          } else if (window.scrollY < 30 && btnclicked === true) {
+//             btnclicked = false
+//             // document.body.scrollTop = 0;
+//          }
+//     }, 25); 
+    
+//     btnclicked = true
+// }
 
