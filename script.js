@@ -1,3 +1,4 @@
+let btnclicked = false;
 var last_known_scroll_position = 0;
 var ticking = false;
 
@@ -62,4 +63,25 @@ function doSomething(scroll_pos) {
 
   });
 
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+function topFunction(currentCount) {
+    setInterval(function() {
+         if (window.scrollY > 30 && btnclicked === true) {
+            document.body.scrollTop -= 50;
+            document.documentElement.scrollTop -= 50;
+         } else if (window.scrollY < 30 && btnclicked === true) {
+            btnclicked =false
+         }
+    },75); 
+    btnclicked = true
+}
 
