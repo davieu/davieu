@@ -2,51 +2,121 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Davis Portfolio</title>
+    <title>Portfolio Dice Game</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link type="text/css" rel="stylesheet" href="../style.css">
 </head>
 
 <body>
 
-<!-- begin navbar container -->
-<div class="container"> 
-  <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
-    <a class="navbar-brand" href="https://davieu.github.io/"><strong><span class="bracket-navbar-brand">{</span> Davis Umana <span class="bracket-navbar-brand">}</span></strong></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-  
-    <div class="collapse navbar-collapse nav-array justify-content-end" id="navbarText">
-      <ul class="navbar-nav navbar-right">
-        <li class="nav-item mr-2">
-          <a id="demo" class="nav-link" href="https://davieu.github.io/"><span class="brackets">{ </span>Home<span class="brackets"> }</span></a>
-        </li>
-        <li class="nav-item mr-2">
-          <a id="demo" class="nav-link" href="#"><span class="brackets">{ </span>About Me<span class="brackets"> }</span></a>
-        </li>
-        <li class="nav-item mr-2">
-          <a id="demo" class="nav-link" href="#"><span class="brackets">{ </span>My Work<span class="brackets"> }</span></a>
-        </li>
-        <li class="nav-item mr-4">
-          <a id="demo" class="nav-link" href="#"><span class="brackets">{ </span>Get in Touch<span class="brackets"> }</span></a>
-        </li>
-      </ul>
+<!-----------------------------------------
+   NAVBAR
+------------------------------------------>
+
+<div class="container" id="home-section"> 
+    <nav class="navbar navbar-expand-md navbar-light fixed-top">
+      <a class="navbar-brand" href="https://davieu.github.io/"><strong><span class="bracket-navbar-brand">{</span> Davis Umana <span class="bracket-navbar-brand">}</span></strong></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse nav-array justify-content-end" id="navbarText">
+        <ul class="navbar-nav navbar-right">
+          <li class="nav-item mr-2">
+            <a class="nav-link" href="../index.html#home-section"><span class="brackets">{ </span>Home<span class="brackets"> }</span></a>
+          </li>
+          <li class="nav-item mr-2">
+            <a class="nav-link" href="../index.html#about-me-section"><span class="brackets">{ </span>About Me<span class="brackets"> }</span></a>
+          </li>
+          <li class="nav-item mr-2">
+            <a class="nav-link" href="../index.html#my-work-section"><span class="brackets">{ </span>My Work<span class="brackets"> }</span></a>
+          </li>
+          <li class="nav-item mr-2">
+            <a class="nav-link" href="https://www.linkedin.com/in/davisumana/" target="_blank"><span class="brackets">{ </span>LinkdIn<span class="brackets"> }</span></a>
+          </li>
+          <li class="nav-item mr-4">
+            <a class="nav-link" href="#"><span class="brackets">{ </span>Get in Touch<i class="far fa-envelope envelope"></i><span class="brackets"> }</span></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div><!-- end navbar container -->
+
+<div class="container pad-top-lg">
+    <!-- PROFILE HEAD COMPONENT -->
+    <div class="row">
+        <div class="col-sm-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+          <div class="row">
+            <div class="col-sm-12 col-md-6">
+              <h2 class="project-title">Referral-System</h2>
+            </div>
+            <div class="col-sm-12 col-md-6">
+              <div class="project-demo-link">
+                <a href="https://hq-umana-test.herokuapp.com/" class="btn btn-md btn-fill projects-link-margin" target="_blank">Live Demo <i class="fas fa-play projects-demo-icon"></i></a>
+                <a class="btn btn-md btn-fill github-link" href="https://github.com/davieu/HQumanaTrivia" target="_blank"><i class="fab fa-github git-size-links"></i> GitHub</a>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+              <div class="col">
+                <p class="lead mt-3">Collaborative fullstack program developed for non-profit organizations to refer their clients to one another.</p>
+              </div>
+            </div>
+        </div>
     </div>
-  </nav>
+
+    <div class="row mt-4">
+      <div class="col-sm-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+          <img class="img-fluid" src="../img/budget-buddy-jumbo.png" alt="Davis developer picture" title="Budget Calculator Picture">
+      </div>
+    </div>
+
+    <div class="row mt-5">
+      <div class="col-sm-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+          <p class="lead">Worked as a backend-developer in this full-stack application that included a team of six to simulate an Agile workspace environment. The teams were split into two main groups of either frontend or backend. We had a project-manager whom was one of our classmates. The product owner was one of our instructors who ultimately decided what our project was and how he wanted it completed. We had a seven day stretch to complete what we all thought was a walk in the park.<br> 
+          <br>Our first few days was mainly planning and figuring out the flow of the app and the data-structure. We ended up using a NoSQL database since I think we all agreed that we was more familiar with MongoDB than SQL. Once we got that sorted both departments began working on their sprints backlogs. The first few days went smoothly with people burning down the charts on Trello, even to a point where we ran out of tasks(bad planning). When that happened some arguments and disagreements ensued within the group. Aside from that, the next day we had our scrum meeting and we all discussed major concerns and cleared out the bad air.<br>
+          <br>On deployment and demo day we had a roadblock with deploying but eventually got it done. This group project I believe was really important for us as a whole since it simulated a real product and it showed us how to work in groups and collabing with GitHub.<br> <br>For me this overall was an unbelievable experience and demonstrated how to work through adversity and  communicate as a group to finish a product.
+              
+          </p>
+      </div>
+    </div>
+
+    <div class="row mt-3">
+      <div class="col-sm-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2  text-center">
+            <a href="../project-pages/hq-umana.html" class="btn btn-md btn-fill btn-previous-projects"><i class="fas fa-arrow-left"></i> Previous Demo</a>
+            <a class="btn btn-md btn-fill text-center btn-next-projects" href="../project-pages/budget-buddy.html">Next Demo <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
 </div>
-<!-- end navbar container -->
 
 
-<p class="jumbo">referral-system</p>
+<!-----------------------------------------
+   FOOTER
+------------------------------------------>
+<footer class="footer mt-5">
+  <div class=container>
+    <div class="row">
+      <div class="col mt-5 text-center">
+        <a href="https://www.linkedin.com/in/davisumana/" class="btn btn-sm btn-fill-footer" target="_blank"><i class="fab fa-linkedin-in fa-2x"></i> </a>
+        <a href="https://github.com/davieu" class="btn btn-sm btn-fill-footer footer-icon-separator" target="_blank"><i class="fab fa-github fa-2x"></i> </a>
+        <a href="https://github.com/davieu/Dice-Game" class="btn btn-sm btn-fill-footer" target="_blank"><i class="far fa-envelope fa-2x"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <script src="../script.js"></script>
+<!-----------------------------------------
+   SCRIPTS
+------------------------------------------>
 
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="../script.js"></script>
+    <p class="jumbo">hq-umana</p>
+<a href="https://hq-umana-test.herokuapp.com/">HQ-UMANA LINK</a>
 </body>
 </html>
-
 
 
