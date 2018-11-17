@@ -1,7 +1,7 @@
 
 :root {
   /* --site-main-color: #f4c016; */
-  --site-main-color: #3716f4b2;
+  --site-main-color: #7756f1;
   --border-radius-main: 12px;
   --icon-color: #212529;
   --footer-color: #f4f4f4;
@@ -24,6 +24,11 @@
 /* sets color for most icons */
 .font-icon {
   color: var(--site-main-color);
+}
+
+.pic-radius {
+  border-radius: var(--border-radius-main);
+  box-shadow: 0 4px 10px -1px rgba(0, 0, 0, 0.2);
 }
 
 /* ----------------------------------------
@@ -54,6 +59,7 @@
 .brackets {
   transition: color .3s ease;
   color:white;
+  font-weight: bold;
 }
 
 .envelope {
@@ -217,7 +223,7 @@
 }
 
 .projects-link-margin {
-  margin-right: 12px;
+  margin-right: 25px;
 }
 
 /* ------------------------------
