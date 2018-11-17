@@ -20,7 +20,7 @@ document.querySelector(domStrings.navbarBrandDOM).addEventListener("mouseout", m
 function mouseOver() {
     let brackets = document.getElementsByClassName(domStrings.bracketNavbarBrandDOM);
     for (let i = 0; i < brackets.length; i++) {
-        brackets[i].style.color = "#3716f4b2";
+        brackets[i].style.color = "#7756f1";
     }
 }
 
