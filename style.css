@@ -34,6 +34,15 @@
 /* ----------------------------------------
   NAVBAR
  ---------------------------------------- */
+
+ .bracket-navbar-brand {
+  color: var(--site-main-color);
+ }
+
+ .navbarBrand:hover {
+   opacity: .80;
+ }
+
 .navbar-toggler{
   outline-color: white;
   border-color: white;
@@ -67,7 +76,7 @@
   padding-left: 6px;
 }
 
-/* set display of the hover over nav link to show the brackets */
+/* set display of the hover over nav link to show the brackets. */
 .nav-link:hover > .brackets { 
   color: var(--site-main-color);
 }

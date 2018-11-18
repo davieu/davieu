@@ -13,24 +13,50 @@ let domStrings = {
 /****************************************************************************************
  * Hover function to make the brackets for the navbar-brand change color
  ****************************************************************************************/
+
+// document.querySelector(domStrings.navbarBrandDOM).addEventListener("mouseover", mouseOver);
+
+// document.querySelector(domStrings.navbarBrandDOM).addEventListener("mouseout", mouseOut);
+
+// function mouseOver() {
+//     let brackets = document.getElementsByClassName(domStrings.bracketNavbarBrandDOM);
+//     for (let i = 0; i < brackets.length; i++) {
+//         brackets[i].style.color = "#7756f1";
+//     }
+// }
+
+// function mouseOut() {
+//     let brackets = document.getElementsByClassName(domStrings.bracketNavbarBrandDOM);
+//     for (let i = 0; i < brackets.length; i++) {
+//         brackets[i].style.color = "#7756f1";
+//     }
+// }
+
+
 document.querySelector(domStrings.navbarBrandDOM).addEventListener("mouseover", mouseOver);
 
 document.querySelector(domStrings.navbarBrandDOM).addEventListener("mouseout", mouseOut);
 
 function mouseOver() {
     let brackets = document.getElementsByClassName(domStrings.bracketNavbarBrandDOM);
+    let navbarBrandName = document.querySelector(domStrings.navbarBrandDOM);
+        
+    // navbarBrandName.style.opacity = ".80";
     for (let i = 0; i < brackets.length; i++) {
-        brackets[i].style.color = "#7756f1";
+        brackets[i].style.opacity = ".80";
     }
 }
 
 function mouseOut() {
     let brackets = document.getElementsByClassName(domStrings.bracketNavbarBrandDOM);
+    let navbarBrandName = document.querySelector(domStrings.navbarBrandDOM);
+        
+    
+    // navbarBrandName.style.opacity = "1";
     for (let i = 0; i < brackets.length; i++) {
-        brackets[i].style.color = "#212529";
+        brackets[i].style.opacity = "1";
     }
 }
-
 
 /****************************************************************************************
  * scroll function so that when the navbar Y position is greater than 30 then navbar-shadow class is added
