@@ -1,282 +1,610 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Davis Portfolio</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-    <link type="text/css" rel="stylesheet" href="style.css">
-</head>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous"
+    />
+    <link type="text/css" rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
-
-<!-----------------------------------------
+  <body>
+    <!-----------------------------------------
    NAVBAR
 ------------------------------------------>
 
-  <div class="container" id="home-section"> 
-    <nav class="navbar navbar-expand-md navbar-light fixed-top">
-      <a class="navbar-brand" href="#home-section"><strong><span class="bracket-navbar-brand">{</span> Davis Umana <span class="bracket-navbar-brand">}</span></strong></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    
-      <div class="collapse navbar-collapse nav-array justify-content-end" id="navbarText">
-        <ul class="navbar-nav navbar-right">
-          <li class="nav-item mr-2">
-            <a class="nav-link" href="#home-section"><span class="brackets">{ </span>Home<span class="brackets"> }</span></a>
-          </li>
-          <li class="nav-item mr-2">
-            <a class="nav-link" href="#about-me-section"><span class="brackets">{ </span>About Me<span class="brackets"> }</span></a>
-          </li>
-          <li class="nav-item mr-2">
-            <a class="nav-link" href="#my-work-section"><span class="brackets">{ </span>My Work<span class="brackets"> }</span></a>
-          </li>
-          <li class="nav-item mr-2">
-            <a class="nav-link" href="https://www.linkedin.com/in/davisumana/" ><span class="brackets">{ </span>LinkedIn<span class="brackets"> }</span></a>
-          </li>
-          <li class="nav-item mr-4">
-            <a class="nav-link" href="mailto:davisumana@gmail.com?subject=Contact%20Davis"><span class="brackets">{ </span>Get in Touch<i class="far fa-envelope envelope"></i><span class="brackets"> }</span></a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </div><!-- end navbar container -->
+    <div class="container" id="home-section">
+      <nav class="navbar navbar-expand-md navbar-light fixed-top">
+        <a class="navbar-brand" href="#home-section"
+          ><strong
+            ><span class="bracket-navbar-brand">{</span> Davis Umana
+            <span class="bracket-navbar-brand">}</span></strong
+          ></a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarText"
+          aria-controls="navbarText"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-<!-----------------------------------------
+        <div
+          class="collapse navbar-collapse nav-array justify-content-end"
+          id="navbarText"
+        >
+          <ul class="navbar-nav navbar-right">
+            <li class="nav-item mr-2">
+              <a class="nav-link" href="#home-section"
+                ><span class="brackets">{ </span>Home<span class="brackets">
+                  }</span
+                ></a
+              >
+            </li>
+            <li class="nav-item mr-2">
+              <a class="nav-link" href="#about-me-section"
+                ><span class="brackets">{ </span>About Me<span class="brackets">
+                  }</span
+                ></a
+              >
+            </li>
+            <li class="nav-item mr-2">
+              <a class="nav-link" href="#my-work-section"
+                ><span class="brackets">{ </span>My Work<span class="brackets">
+                  }</span
+                ></a
+              >
+            </li>
+            <li class="nav-item mr-2">
+              <a class="nav-link" href="https://www.linkedin.com/in/davisumana/"
+                ><span class="brackets">{ </span>LinkedIn<span class="brackets">
+                  }</span
+                ></a
+              >
+            </li>
+            <li class="nav-item mr-4">
+              <a
+                class="nav-link"
+                href="mailto:davisumana@gmail.com?subject=Contact%20Davis"
+                ><span class="brackets">{ </span>Get in Touch<i
+                  class="far fa-envelope envelope"
+                ></i
+                ><span class="brackets"> }</span></a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <!-- end navbar container -->
+
+    <!-----------------------------------------
    INTRODUCTION 
 ------------------------------------------>
 
-  <div class="container pad-top-lg">
-      
-    <!-- Profile Head START -->
-    <div class="row">
+    <div class="container pad-top-lg">
+      <!-- Profile Head START -->
+      <div class="row">
         <div class="col-sm-12 col-lg-10 offset-lg-1 col-xl-8 offset-xl-2">
           <div class="row">
             <div class="col">
-              <img class="intro__profile-img" src="img/davis-profile-min.png" alt="Davis Illustration Logo" title="Davis Illustration Logo">
-              <h1 class="intro__name">Davis<br>Umana</h1>
+              <img
+                class="intro__profile-img"
+                src="img/davis-profile-min.png"
+                alt="Davis Illustration Logo"
+                title="Davis Illustration Logo"
+              />
+              <h1 class="intro__name">Davis<br />Umana</h1>
             </div>
           </div>
         </div>
-    </div>
-    <!-- Profile Head END-->
-
-    <div class="row mt-4">
-      <div class="col-sm-12 col-lg-10 offset-lg-1 col-xl-8 offset-xl-2">
-        <h2>Hi, I'm Davis Umana. I am a full stack software developer.</h2>
       </div>
-    </div>
+      <!-- Profile Head END-->
 
-    <div class="row mt-4">
-      <div class="col-sm-12 col-lg-10 offset-lg-1 col-xl-8 offset-xl-2">
-        <p class="lead">I am a passionate and dedicated full-stack-software developer. I like to work alongside other like-minded and hungry folks who have a commitment to improving the overall user and developer experience. I have a hunger to learn!</p>
+      <div class="row mt-4">
+        <div class="col-sm-12 col-lg-10 offset-lg-1 col-xl-8 offset-xl-2">
+          <h2>Hi, I'm Davis Umana. I am a full stack software developer.</h2>
+        </div>
       </div>
-    </div>
 
-    <div class="row mt-2">
-      <div class="col-sm-12 col-lg-10 offset-lg-1 col-xl-8 offset-xl-2">
-        <p class="lead"><b>Frontend:</b><br>React.js
-          <span class="intro__separator"> | </span>Backbone
-          <span class="intro__separator"> | </span>Redux
-          <span class="intro__separator"> | </span>jQuery
-          <span class="intro__separator"> | </span>Bootstrap
-          <span class="intro__separator"> | </span>C#/ Unity
-          <span class="intro__separator"> | </span>HTML
-          <span class="intro__separator"> | </span>CSS</p>
+      <div class="row mt-4">
+        <div class="col-sm-12 col-lg-10 offset-lg-1 col-xl-8 offset-xl-2">
+          <p class="lead">
+            I am a full-stack developer who loves to tango with some code. My
+            eagerness to keep learning and set aside time to commit to new
+            technologies or go on deep dives is what I love. Aside from coding I
+            like to go outdoors to walk my doggo and fish!
+          </p>
+        </div>
       </div>
-    </div>
 
-    <div class="row mt-2">
-      <div class="col-sm-12 col-lg-10 offset-lg-1 col-xl-8 offset-xl-2">
-        <p class="lead"> <b>Backend:</b><br>Node.js
-          <span class="intro__separator"> | </span>Express
-          <span class="intro__separator"> | </span>Socket.IO
-          <span class="intro__separator"> | </span>MongoDB
+      <div class="row mt-2">
+        <div class="col-sm-12 col-lg-10 offset-lg-1 col-xl-8 offset-xl-2">
+          <p class="lead">
+            <b>Frontend:</b><br />React.js
+            <span class="intro__separator"> | </span>Vue.js
+            <span class="intro__separator"> | </span>Backbone
+            <span class="intro__separator"> | </span>Redux
+            <span class="intro__separator"> | </span>CSS/Grid
+            <span class="intro__separator"> | </span>Bootstrap
+            <span class="intro__separator"> | </span>HTML
+            <span class="intro__separator"> | </span>jQuery
+          </p>
+        </div>
       </div>
-    </div>
 
-    <!-----------------------------------------
+      <div class="row mt-2">
+        <div class="col-sm-12 col-lg-10 offset-lg-1 col-xl-8 offset-xl-2">
+          <p class="lead">
+            <b>Backend:</b><br />Node.js
+            <span class="intro__separator"> | </span>Express
+            <span class="intro__separator"> | </span>Socket.IO
+            <span class="intro__separator"> | </span>MongoDB
+            <span class="intro__separator"> | </span>Passport
+            <span class="intro__separator"> | </span>OAuth
+          </p>
+        </div>
+      </div>
+
+      <div class="row mt-2">
+        <div class="col-sm-12 col-lg-10 offset-lg-1 col-xl-8 offset-xl-2">
+          <p class="lead">
+            <b>Other:</b><br />Java <span class="intro__separator"> | </span>PHP
+          </p>
+        </div>
+      </div>
+
+      <!-----------------------------------------
        Work In Progress
     ------------------------------------------>
-    <div class="row mb-4 pad-top-md" id="my-work-section">
-      <div class="col-sm-12 col-lg-10 offset-lg-1 col-xl-8 offset-xl-2">
-        <h2><i class="fas fa-code font-icon"></i> Works in Progress
-          <a class="btn btn-md btn-fill github-link" href="https://github.com/davieu" target="_blank"><i class="fab fa-github git-resize-links"></i> GitHub</a>
-        </h2>
+      <div class="row mb-4 pad-top-md" id="my-work-section">
+        <div class="col-sm-12 col-lg-10 offset-lg-1 col-xl-8 offset-xl-2">
+          <h2>
+            <i class="fas fa-code font-icon"></i> Works in Progress
+            <a
+              class="btn btn-md btn-fill github-link"
+              href="https://github.com/davieu"
+              target="_blank"
+              ><i class="fab fa-github git-resize-links"></i> GitHub</a
+            >
+          </h2>
+        </div>
       </div>
-    </div>
 
-    <div class="row">
-      <div class="col-sm-12 col-lg-10 offset-lg-1 col-xl-8 offset-xl-2">
-        <div class="row">
-          <div class="col-md-6 col-sm-12 mt-4 ">
-            <div class="card h-100">
-              <a href="https://ez-cart.herokuapp.com/" target="_blank"><img class="card-img-top" src="img/in-progress.jpg" alt="Project in Progress" title="Vue Shopping Cart"></a>
-              <div class="card-body">
-                <h5 class="card-title ">Vue Shopping Cart</h5>
-                <p class="card-text">Fullstack shopping cart app using Vue and MongoDB. Add products to cart and create new products. Uses Vuex, node, express and mongoose. Check out the work in progress with either the live demo or the Github page.</p>
-                <p></p>
-                <a href="https://ez-cart.herokuapp.com/" class="btn btn-sm btn-fill" target="_blank">Check it Out!</a>
-                <a href="https://github.com/davieu/shopping-cart-demo" class="github-link btn-icon-fill" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+      <div class="row">
+        <div class="col-sm-12 col-lg-10 offset-lg-1 col-xl-8 offset-xl-2">
+          <div class="row">
+            <div class="col-md-6 col-sm-12 mt-4">
+              <div class="card h-100">
+                <a href="https://ez-cart.herokuapp.com/" target="_blank"
+                  ><img
+                    class="card-img-top progress-img"
+                    src="img/thumb-vue-shoppingCart2.png"
+                    alt="Project in Progress"
+                    title="Vue Shopping Cart"
+                /></a>
+                <div class="card-body">
+                  <h5 class="card-title">Vue Shopping Cart</h5>
+                  <p class="card-text">
+                    A CRUD fullstack shopping cart app using Vue and MongoDB.
+                    Add products to cart and add new products. Uses Vuex, node,
+                    express and mongoose. Check out the work in progress with
+                    either the live demo or the Github page.
+                  </p>
+                  <a
+                    href="https://ez-cart.herokuapp.com/"
+                    class="btn btn-sm btn-fill"
+                    target="_blank"
+                    >Check it Out!</a
+                  >
+                  <a
+                    href="https://github.com/davieu/shopping-cart-demo"
+                    class="github-link btn-icon-fill"
+                    target="_blank"
+                    ><i class="fab fa-github fa-2x"></i
+                  ></a>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="col-md-6 col-sm-12 mt-4 ">
-            <div class="card h-100">
-              <a href="https://react-notepad.herokuapp.com/" target="_blank"><img class="card-img-top" src="img/in-progress.jpg" alt="Project in Progress" title="React Notes+"></a>
-              <div class="card-body">
-                <h5 class="card-title ">React Notes+</h5>
-                <p class="card-text">A React Notepad for taking notes. Uses <a href="https://draftjs.org/"><u>Draft.js</u></a> a rich text editor. Backend, redux and more tools for the editor will be coming soon. Check out the work in progress with either the live demo or the Github page.</p>
-                <p></p>
-                <a href="https://react-notepad.herokuapp.com/" class="btn btn-sm btn-fill" target="_blank">Check it Out!</a>
-                <a href="https://github.com/davieu/React-Notepad" class="github-link btn-icon-fill" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+            <div class="col-md-6 col-sm-12 mt-4">
+              <div class="card h-100">
+                <a href="https://react-notepad.herokuapp.com/" target="_blank"
+                  ><img
+                    class="card-img-top progress-img"
+                    src="img/thumb-react-notes2.png"
+                    alt="Project in Progress"
+                    title="React Notes+"
+                /></a>
+                <div class="card-body">
+                  <h5 class="card-title">React Notes+</h5>
+                  <p class="card-text">
+                    A React Notepad for taking notes. Uses
+                    <a href="https://draftjs.org/"><u>Draft.js</u></a> a rich
+                    text editor. Backend, redux and more. Check out the work in
+                    progress with either the live demo or the Github page.
+                    <span style="color: rgb(228, 18, 18);"
+                      >NOTE Click 'Check it Out' again if it doesn't load.</span
+                    >
+                  </p>
+                  <a
+                    href="https://react-notepad.herokuapp.com/"
+                    class="btn btn-sm btn-fill"
+                    target="_blank"
+                    >Check it Out!</a
+                  >
+                  <a
+                    href="https://github.com/davieu/React-Notepad"
+                    class="github-link btn-icon-fill"
+                    target="_blank"
+                    ><i class="fab fa-github fa-2x"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-sm-12 mt-4">
+              <div class="card h-100">
+                <a href="https://github.com/davieu/emailLoop2" target="_blank"
+                  ><img
+                    class="card-img-top progress-img"
+                    src="img/thumb-feedback-loop.png"
+                    alt="Project in Progress"
+                    title="React Notes+"
+                /></a>
+                <div class="card-body">
+                  <h5 class="card-title">React with OAuth 2.0</h5>
+                  <p class="card-text">
+                    React project with Google OAuth 2.0. Currently backend is
+                    complete and OAuth is functional. Working on the frontend to
+                    display the data. Check out the
+                    <a
+                      href="https://github.com/davieu/emailLoop2"
+                      target="_blank"
+                      >code!
+                    </a>
+                  </p>
+                  <a
+                    href="https://github.com/davieu/emailLoop2"
+                    class="btn btn-sm btn-fill"
+                    target="_blank"
+                    disabled
+                    >Check it Out!</a
+                  >
+                  <a
+                    href="https://github.com/davieu/emailLoop2"
+                    class="github-link btn-icon-fill"
+                    target="_blank"
+                    ><i class="fab fa-github fa-2x"></i
+                  ></a>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-md-6 col-sm-12 mt-4 ">
-            <div class="card h-100">
-              <a href="https://recipe-app-101.herokuapp.com/" target="_blank"><img class="card-img-top" src="img/in-progress.jpg" alt="Project in Progress" title="React Notes+"></a>
-              <div class="card-body">
-                <h5 class="card-title ">Forkify convert to React</h5>
-                <p class="card-text">Tutorial using vanilla javascript MVC patterns. My goal is to convert this app with modern frameworks such as React or Vue. Fully functional and incorporates API use, async functions, local storage and much more.</p>
-                <p></p>
-                <a href="https://recipe-app-101.herokuapp.com/" class="btn btn-sm btn-fill" target="_blank">Check it Out!</a>
-                <a href="https://github.com/davieu/Recipe-Project" class="github-link btn-icon-fill" target="_blank"><i class="fab fa-github fa-2x"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
-    </div>
 
-    
-    <!-----------------------------------------
+      <!-----------------------------------------
        MY WORK CARDS SECTION
     ------------------------------------------>
-    <div class="row mb-4 pad-top-md" id="my-work-section">
-      <div class="col-sm-12 col-lg-10 offset-lg-1 col-xl-8 offset-xl-2">
-        <h2><i class="fas fa-code font-icon"></i> My Work
-          <a class="btn btn-md btn-fill github-link" href="https://github.com/davieu" target="_blank"><i class="fab fa-github git-resize-links"></i> GitHub</a>
-        </h2>
+      <div class="row mb-4 pad-top-md" id="my-work-section">
+        <div class="col-sm-12 col-lg-10 offset-lg-1 col-xl-8 offset-xl-2">
+          <h2>
+            <i class="fas fa-code font-icon"></i> My Work
+            <a
+              class="btn btn-md btn-fill github-link"
+              href="https://github.com/davieu"
+              target="_blank"
+              ><i class="fab fa-github git-resize-links"></i> GitHub</a
+            >
+          </h2>
+        </div>
       </div>
-    </div>
-    
-    <div class="row">
-      <div class="col-sm-12 col-lg-10 offset-lg-1 col-xl-8 offset-xl-2">
-        <div class="row">
-          <div class="col-md-6 col-sm-12 mt-4 ">
-            <div class="card h-100">
-              <img class="card-img-top" src="img/thumb-hqumana-min.png" alt="HQ-Umana Trivia Picture" title="HQ-Umana Trivia Picture">
-              <div class="card-body">
-                <h5 class="card-title ">HQ-Umana Trivia</h5>
-                <p class="card-text">Inspired by HQ-Trivia. Fullstack application that uses React and Socket.IO. </p>
-                <a href="project-pages/hq-umana.html" class="btn btn-sm btn-fill">Check it Out!</a>
-                <a href="https://github.com/davieu/HQ-Umana-Trivia" class="github-link btn-icon-fill" target="_blank"><i class="fab fa-github fa-2x"></i></a>
-              </div>
-            </div>
-          </div>
-        
-          <div class="col-md-6 col-sm-12 mt-4">
-            <div class="card h-100">
-              <img class="card-img-top" src="img/thumb-budgetbuddy-min.png" alt="Budget Buddy Picture" title="Budget Buddy Picture">
-              <div class="card-body">
-                <h5 class="card-title">Budget Buddy</h5>
-                <p class="card-text">Frontend budget calculator that relied heavily on object oriented programming and separation of data and UI.</p>
-                <a href="project-pages/budget-buddy.html" class="btn btn-sm btn-fill">Check it Out!</a>
-                <a href="https://github.com/davieu/budget-buddy" class="github-link btn-icon-fill" target="_blank"><i class="fab fa-github fa-2x"></i></a>
-              </div>
-            </div>
-          </div>
 
-          <div class="col-md-6 col-sm-12 mt-4">
+      <div class="row">
+        <div class="col-sm-12 col-lg-10 offset-lg-1 col-xl-8 offset-xl-2">
+          <div class="row">
+            <div class="col-md-6 col-sm-12 mt-4">
               <div class="card h-100">
-                <img class="card-img-top" src="img/thumb-referral-min.png" alt="Referral-System Picture" title="Referral-System Picture">
+                <img
+                  class="card-img-top"
+                  src="img/thumb-hqumana-min.png"
+                  alt="HQ-Umana Trivia Picture"
+                  title="HQ-Umana Trivia Picture"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">HQ-Umana Trivia</h5>
+                  <p class="card-text">
+                    Inspired by HQ-Trivia. Fullstack application that uses React
+                    and Socket.IO. Node and Express to build the server.
+                  </p>
+                  <a
+                    href="project-pages/hq-umana.html"
+                    class="btn btn-sm btn-fill"
+                    >Check it Out!</a
+                  >
+                  <a
+                    href="https://github.com/davieu/HQ-Umana-Trivia"
+                    class="github-link btn-icon-fill"
+                    target="_blank"
+                    ><i class="fab fa-github fa-2x"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-sm-12 mt-4">
+              <div class="card h-100">
+                <img
+                  class="card-img-top myWork-img"
+                  src="img/thumb-loadgistics.png"
+                  alt="Loadgistics responsive site"
+                  title="Loadgistics responsive site"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Loadgistics Responsive Site</h5>
+                  <p class="card-text">
+                    This is a fully responsive site that I made with custom CSS
+                    using grid/flex and some javaScript for functionality.
+                    Mobile first.
+                  </p>
+                  <a
+                    href="project-pages/responsive-site.html"
+                    class="btn btn-sm btn-fill"
+                    >Check it Out!</a
+                  >
+                  <a
+                    href="https://github.com/davieu/learning-css-grids/tree/master/frontend-freight-site"
+                    class="github-link btn-icon-fill"
+                    target="_blank"
+                    ><i class="fab fa-github fa-2x"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-sm-12 mt-4">
+              <div class="card h-100">
+                <img
+                  class="card-img-top"
+                  src="img/thumb-budgetbuddy-min.png"
+                  alt="Budget Buddy Picture"
+                  title="Budget Buddy Picture"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Budget Buddy</h5>
+                  <p class="card-text">
+                    Frontend budget calculator that relied heavily on object
+                    oriented programming and separation of data and UI. Vanilla
+                    javaScript.
+                  </p>
+                  <a
+                    href="project-pages/budget-buddy.html"
+                    class="btn btn-sm btn-fill"
+                    >Check it Out!</a
+                  >
+                  <a
+                    href="https://github.com/davieu/budget-buddy"
+                    class="github-link btn-icon-fill"
+                    target="_blank"
+                    ><i class="fab fa-github fa-2x"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-sm-12 mt-4">
+              <div class="card h-100">
+                <img
+                  class="card-img-top"
+                  src="img/thumb-referral-min.png"
+                  alt="Referral-System Picture"
+                  title="Referral-System Picture"
+                />
                 <div class="card-body">
                   <h5 class="card-title">Referral-System</h5>
-                  <p class="card-text">Collaborative fullstack program developed for non-profit organizations to refer their clients to one another.</p>
-                  <a href="project-pages/referral-system.html" class="btn btn-sm btn-fill">Check it Out!</a>
-                  <a href="https://github.com/roykim79/referral-system" class="github-link btn-icon-fill" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+                  <p class="card-text">
+                    Collaborative fullstack program developed for non-profit
+                    organizations to refer their clients to one another.
+                  </p>
+                  <a
+                    href="project-pages/referral-system.html"
+                    class="btn btn-sm btn-fill"
+                    >Check it Out!</a
+                  >
+                  <a
+                    href="https://github.com/roykim79/referral-system"
+                    class="github-link btn-icon-fill"
+                    target="_blank"
+                    ><i class="fab fa-github fa-2x"></i
+                  ></a>
                 </div>
-              </div> 
+              </div>
             </div>
 
-          <div class="col-md-6 col-sm-12 mt-4">
-            <div class="card h-100">
-              <img class="card-img-top" src="img/thumb-dicegame-min.png" alt="Dice Game Picture" title="Dice Game Picture">
-              <div class="card-body">
-                <h5 class="card-title">Dice Game</h5>
-                <p class="card-text">Formally known as Pig. A simple web-app implementing game logic and buttons that interact and mutate data.</p>
-                <a href="project-pages/dice-game.html" class="btn btn-sm btn-fill">Check it Out!</a>
-                <a href="https://github.com/davieu/Dice-Game" class="github-link btn-icon-fill" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+            <div class="col-md-6 col-sm-12 mt-4">
+              <div class="card h-100">
+                <img
+                  class="card-img-top"
+                  src="img/thumb-dicegame-min.png"
+                  alt="Dice Game Picture"
+                  title="Dice Game Picture"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Dice Game</h5>
+                  <p class="card-text">
+                    Formally known as Pig. A simple web-app implementing game
+                    logic and buttons that interact and mutate data.
+                  </p>
+                  <a
+                    href="project-pages/dice-game.html"
+                    class="btn btn-sm btn-fill"
+                    >Check it Out!</a
+                  >
+                  <a
+                    href="https://github.com/davieu/Dice-Game"
+                    class="github-link btn-icon-fill"
+                    target="_blank"
+                    ><i class="fab fa-github fa-2x"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-sm-12 mt-4">
+              <div class="card h-100">
+                <img
+                  class="card-img-top"
+                  src="img/thumb-forkify.png"
+                  alt="forkify pic"
+                  title="forkify pic"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Forkify convert to React</h5>
+                  <p class="card-text">
+                    Vanilla javascript MVC patterns.
+                    <span style="color: rgb(228, 18, 18);"
+                      >NOTE: Unfortunately, the Food2Fork API that was used is
+                      no longer in service.
+                    </span>
+                  </p>
+                  <a
+                    href="https://recipe-app-101.herokuapp.com/"
+                    class="btn btn-sm btn-fill"
+                    target="_blank"
+                    >Check it Out!</a
+                  >
+                  <a
+                    href="https://github.com/davieu/Recipe-Project"
+                    class="github-link btn-icon-fill"
+                    target="_blank"
+                    ><i class="fab fa-github fa-2x"></i
+                  ></a>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div><!-- End row for project cards -->
+      <!-- End row for project cards -->
 
-    <!-----------------------------------------
+      <!-----------------------------------------
        ABOUT ME SECTION
     ------------------------------------------>
-    
-    <div class="row mb-4 pad-top-md" id="about-me-section">
-      <div class="col-sm-12 col-lg-10 offset-lg-1 col-xl-8 offset-xl-2">
-        <h2><i class="far fa-user font-icon"></i> About Me</h2>
+
+      <div class="row mb-4 pad-top-md" id="about-me-section">
+        <div class="col-sm-12 col-lg-10 offset-lg-1 col-xl-8 offset-xl-2">
+          <h2><i class="far fa-user font-icon"></i> About Me</h2>
+        </div>
       </div>
+
+      <div class="row pb-5">
+        <div class="col-sm-12 col-lg-10 offset-lg-1 col-xl-8 offset-xl-2">
+          <img
+            class="img-fluid pic-radius"
+            src="img/davis-umana-bg-min.png"
+            alt="Davis developer picture"
+            title="Davis Developer Picture"
+          />
+          <p class="pt-4 lead">
+            Growing up I always had a strong interest in technology and
+            electronics, but before I began my journey to become a software
+            engineer my previous career path was ingrained in logistics and
+            sales. My satisfaction was dwindling in my current field and I
+            needed a new transition. A transition where I could face new
+            challenges and problem solve my way through them. With a new goal in
+            life to learn to code I decided to start with the basics of HTML and
+            CSS. Slowly I was chipping away at code and moving up to harder and
+            complicated problems. I was continuously learning new skills
+            everyday and loved the challenges that programming entailed. By
+            dedicating more time to code it further cemented my passion for
+            coding and validated that this is the career change that I have been
+            searching for.
+          </p>
+        </div>
+      </div>
+      <!-- End row for project cards -->
     </div>
-    
-    <div class="row pb-5">
-      <div class="col-sm-12 col-lg-10 offset-lg-1 col-xl-8 offset-xl-2">
-        <img class="img-fluid pic-radius" src="img/davis-umana-bg-min.png" alt="Davis developer picture" title="Davis Developer Picture">
-        <p class="pt-4 lead">Growing up I always had a strong interest in technology and electronics, but before I began my journey to become a software engineer my previous career path was ingrained in logistics and sales. My satisfaction was dwindling in my current field and I needed a new transition. A transition where I could face new challenges and problem solve my way through them. With a new goal in life to learn to code I decided to start with the basics of HTML and CSS. Slowly I was chipping away at code and moving up to harder and complicated problems. I was continuously learning new skills everyday and loved the challenges that programming entailed. By dedicating more time to code it further cemented my passion for coding and validated that this is the career change that I have been searching for.</p>
-      </div>
-    </div><!-- End row for project cards -->
-  
-  </div> <!-- End container-->
+    <!-- End container-->
 
-
-<!-----------------------------------------
+    <!-----------------------------------------
    FOOTER
 ------------------------------------------>
-<footer class="footer mt-5">
-  <div class=container>
-    <div class="row">
-      <div class="col mt-5 text-center">
-        <a href="https://www.linkedin.com/in/davisumana/" class="btn btn-sm btn-fill-footer" target="_blank"> <i class="fab fa-linkedin-in fa-2x"></i> </a>
-        <a href="https://github.com/davieu" class="btn btn-sm btn-fill-footer footer-icon-separator" target="_blank"> <i class="fab fa-github fa-2x"></i> </a>
-        <a href="mailto:davisumana@gmail.com?subject=Contact%20Davis" class="btn btn-sm btn-fill-footer"> <i class="far fa-envelope fa-2x"></i> </a>
+    <footer class="footer mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col mt-5 text-center">
+            <a
+              href="https://www.linkedin.com/in/davisumana/"
+              class="btn btn-sm btn-fill-footer"
+              target="_blank"
+            >
+              <i class="fab fa-linkedin-in fa-2x"></i>
+            </a>
+            <a
+              href="https://github.com/davieu"
+              class="btn btn-sm btn-fill-footer footer-icon-separator"
+              target="_blank"
+            >
+              <i class="fab fa-github fa-2x"></i>
+            </a>
+            <a
+              href="mailto:davisumana@gmail.com?subject=Contact%20Davis"
+              class="btn btn-sm btn-fill-footer"
+            >
+              <i class="far fa-envelope fa-2x"></i>
+            </a>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</footer>
+    </footer>
 
-<!-----------------------------------------
+    <!-----------------------------------------
    SCRIPTS
 ------------------------------------------>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-  <script src="script.js"></script>
-
-</body>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
 </html>
 
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Page Title</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" media="screen" href="main.css">
-  <script src="main.js"></script>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+  </head>
+  <body></body>
 </html>
